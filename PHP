@@ -1,0 +1,20 @@
+
+<!--?php 〜 ?>の中にPHPの命令を書く。<?php 〜 ?>の部分がHTMLに変換された上で表示されます。-->
+
+<html>
+ <head></head>
+ <body>
+  <h1>PHP</h1>
+  <?php echo '<h2>初級</h2>';?><!--PHP部分-->
+ </body>
+</html>
+
+<!--HTMLに変換されたPHPコード-->
+<html>
+ <head></head>
+ <body>
+  <h1>PHP</h1>
+  '<h2>初級</h2>'><!--HTMLに変換された-->
+ </body>
+</html>
+
