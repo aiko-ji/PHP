@@ -27,5 +27,14 @@ echo 5 % 2;  <!--結果 1-->
  <!--変数とは【頭に「$」記号をつける・「$変数名 = 値;」とする】-->
  <?php
   $name = 'Bob'; //右辺’Bob’の変数＄nameに代入するとう意味
-　echo $name;  //結果：Bob
+ echo $name; //結果：Bob
  ?>
+
+<!--正方形の面積を計算【変数を使用する場合】-->
+<?php
+$length = 7;
+$area = $length * $length;
+//length　複数回使いまわせる
+echo $area; 
+//　結果　49
+?>
