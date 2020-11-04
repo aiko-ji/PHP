@@ -191,3 +191,30 @@ switch($coin) {
    echo 'エラー';
    break;
 }
+
+<!-- switch文　break caseブロックの最後にはbreak命令を指定する -->
+
+<!-- $coin == 0のとき -->
+switch ($coin){
+   case 0:
+     echo '表'; <!--実行される-->
+   case 1:
+     echo '裏';
+     break;
+   default:
+     echo 'エラー';
+     break;
+}
+<!-- echo'表'の後にbreak命令がない為、条件が成立しない。次のcaseブロックも実行される。　結果：裏表 -->
+
+<!-- $coin == 1 のとき -->
+switch($coin) {
+   case 0:
+    echo '表';
+   case !:
+    echo '裏';
+    break; <!-- break命令がある為、現在のブロックを抜ける　結果：裏 -->
+   default:
+    echo 'エラー';
+    break;
+}
